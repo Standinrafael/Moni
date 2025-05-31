@@ -87,13 +87,15 @@ h4 {
 	max-height: 400px;
 }
 
-.card:hover .imgBox {
-	transform: rotateY(-135deg);
+.card:hover .imgBox,
+.card.flipped .imgBox {
+  transform: rotateY(-135deg);
 }
 
-.card:hover .bark {
-	opacity: 1;
-	transition: .6s;
+.card:hover .bark,
+.card.flipped .bark {
+  opacity: 1;
+  transition: .6s;
   box-shadow: 300px 200px 100px rgba(0, 0, 0, .4) inset;
 }
 
